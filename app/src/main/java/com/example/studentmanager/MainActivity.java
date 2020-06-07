@@ -35,6 +35,7 @@ public class MainActivity extends Activity {
 
         tv = (TextView) findViewById(R.id.textView3);
         tv_sl = (TextView) findViewById(R.id.textView_soluong);
+        tv_sl.setTextSize(25);
 
         btn_them=(Button) findViewById(R.id.button1);
         btn_xoa=(Button) findViewById(R.id.button2);

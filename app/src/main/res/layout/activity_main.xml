@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg1"
+    android:background="@drawable/bg8"
 
     tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="120dp"
-        android:layout_height="58dp"
-        android:src="@drawable/logo" />
+        android:layout_width="47dp"
+        android:layout_height="51dp"
+        android:src="@drawable/logo1" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhập ID Sinh Viên"
+        android:text="Student ID:"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -34,7 +34,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhập Tên Sinh Viên"
+        android:text="Nhập tên sinh viên:"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -86,10 +86,15 @@
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#194EE0"
+        android:layout_height="0dp"
+        android:dividerHeight="3sp"
+        android:divider="#0F0E0E"
+
+        android:layout_weight="1"
         android:cacheColorHint="@android:color/secondary_text_dark"
-        android:drawSelectorOnTop="true" >
+        android:drawSelectorOnTop="true">
+
+
 
     </ListView>
 

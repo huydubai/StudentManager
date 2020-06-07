@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".ActivityLogin">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            android:id="@+id/layout_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="UserName"
+                android:id="@+id/ed_userName"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/icon_person"
+                android:drawablePadding="15dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/layout_password"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icon_psw"
+                android:drawablePadding="15dp"
+                android:hint="Password"
+                android:id="@+id/edPsw"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_Login"
+                android:text="Đăng Nhập"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/btn_SignUp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:text="Đăng Ký" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
